@@ -21,9 +21,6 @@ class PicturesController < ApplicationController
   @picture = Picture.new
   end
 
-  def gallery
-  end 
-
   private
 
   def picture_params
