@@ -12,9 +12,17 @@ class PicturesController < ApplicationController
       redirect_to pictures_path
   end
 
+  def edit
+    @pictures = Picture.find(params[:id])
+  end
+
   def delete
   end
+
   def update
+    @pictures = Picture.find(params[:id])
+    @pictures.update(picture_params)
+    redirect_to(picture_path(@pictures))
   end
 
   def new
