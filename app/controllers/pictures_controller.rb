@@ -4,13 +4,14 @@ class PicturesController < ApplicationController
   end
 
   def show
-    @pictures = Picture.all
+  @pictures = Picture.find(params[:id])
   end
 
   def create
     @picture = Picture.create(picture_params)
       redirect_to pictures_path
   end
+
   def delete
   end
   def update
@@ -19,6 +20,9 @@ class PicturesController < ApplicationController
   def new
   @picture = Picture.new
   end
+
+  def gallery
+  end 
 
   private
 
