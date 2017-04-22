@@ -1,0 +1,6 @@
+<h1>Recent Uploads</h1>
+
+<% @pictures.each do |picture| %>
+<%= image_tag picture.image.url(:medium)%>
+<% picture.caption %>
+<%end%>

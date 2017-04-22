@@ -1,5 +1,13 @@
 <h1>Welcome to TravelPics!</h1>
+<!-- <% @pictures.each do |picture| %>
+<%= image_tag picture.image.url(:medium)%>
+<% picture.caption %>
+<%end%> -->
 <% @pictures.each do |picture| %>
-<%= image_tag picture.image.url(:medium) %>
-<%= picture.caption %>
+  <div class="row">
+    <%= link_to (image_tag picture.image.url(:medium)), picture_path(picture) %> <!-- we should take out picture path and figure out how to expand -->
+    <p>
+      <%= picture.caption %>
+    </p>
+  </div>
 <% end %>

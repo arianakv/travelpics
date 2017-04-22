@@ -1,9 +1,12 @@
 class PicturesController < ApplicationController
   def index
-   @pictures = Picture.all
+    @pictures = Picture.all
   end
+
   def show
+    @pictures = Picture.all
   end
+
   def create
     @picture = Picture.create(picture_params)
       redirect_to pictures_path
@@ -12,7 +15,8 @@ class PicturesController < ApplicationController
   end
   def update
   end
-    def new
+
+  def new
   @picture = Picture.new
   end
 
