@@ -1,1 +1,19 @@
 <h1>Hello</h1>
+
+<div class="picture-wrapper row">
+  <% @pictures.each do |picture| %>
+    <div class="picture">
+      <div class="picture-head">
+        <div class="name">
+          Ben Walker
+        </div>
+      </div>
+      <div class="image center-block">
+        <%= link_to (image_tag picture.image.url(:medium), class:'img-responsive'), picture_path(picture) %>
+      </div>
+      <p class="caption">
+        <%= picture.caption %>
+      </p>
+    </div>
+  <% end %>
+</div>

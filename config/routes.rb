@@ -3,5 +3,8 @@ Rails.application.routes.draw do
   root 'pictures#index'
   # get 'gallery' => 'gallery#gallery'
 
-  resources :gallery, :pictures, only: [:index, :create, :edit, :update, :show, :destroy]
+
+
+  resources :neighborhood
+  resources :pictures
 end
