@@ -25,6 +25,16 @@
 <li><a href="/south_beach">SOBE</a></li>
 <li><a href="/little_havana">Little Havana</a></li> -->
 
+<head>
+<script type="text/javascript">
+var count = 0;
+function countClicks() {
+ count = count + 1;
+    document.getElementById("p2").innerHTML = count;
+}
+</script>
+
+<div id="bootstrap-overrides">
 <div class="picture-wrapper row">
   <% @pictures.each do |picture| %>
     <div class="picture">
@@ -39,8 +49,17 @@
       <p class="caption">
         <%= picture.caption %>
       </p>
+
+      <section id="like-button">
+        <p>
+          <a id="heart" href="javascript:countClicks();"><img src="http://i1174.photobucket.com/albums/r615/arianakv/409001-200_zpsl4iralyh.png" alt="heart"></a>
+
+          <div id="p2">0<div></p>
+      </section>
+
     </div>
   <% end %>
+</div>
 </div>
 
 <!-- Prev/Next Pages -->

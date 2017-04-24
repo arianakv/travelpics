@@ -94,3 +94,24 @@ body {
 button {
   background-color: white;
 }
+
+#bootstrap-overrides .row{
+  margin-left: 26em;
+  padding-left: 1em;
+  // width: 25%;
+}
+#bootstrap-overrides .img-responsive {
+  display: inline-block;
+  max-height: 550px;
+  max-width: 600px;
+}
+
+#heart img {
+  width: 30px;
+  height: 30px;
+}
+
+#caption {
+  position: relative;
+  padding-top: 1em;
+}
