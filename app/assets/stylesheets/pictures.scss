@@ -85,9 +85,8 @@ body {
 
 #link {
   position: relative;
-  width: 16%;
-  margin: 0 auto;
   padding-bottom: 3em;
+  display: inline-flex;
   // background-color: white;
 }
 
@@ -96,7 +95,7 @@ button {
 }
 
 #bootstrap-overrides .picture-wrapper{
-  margin-left: 26em;
+  margin-left: 1em;
   padding-left: 1em;
   // width: 25%;
 }
@@ -118,4 +117,52 @@ button {
 
 #bootstrap-overrides img {
   max-width: 600px;
+}
+
+/*====================================================
+ PARALLAX
+ ========================================*/
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+/* ============================================================
+  SECTIONS
+============================================================ */
+section.index:last-child {
+  margin-bottom: -15em;
+}
+section.index.content {
+  padding: 30px 0;
+  display: inline-block;
+}
+section.index.parallax {
+  height: 340px;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+section.index.parallax h1 {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 80px;
+  line-height:600px;
+  font-weight: 250;
+  text-align: center;
+  text-transform: uppercase;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  // font-style:
+}
+section.index.parallax-1 {
+  background-image: url("/selfie.jpeg");
+}
+
+section.index.parallax h2{
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 20px;
+  font-weight: 250;
+  text-align: right;
+  text-transform: uppercase;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }

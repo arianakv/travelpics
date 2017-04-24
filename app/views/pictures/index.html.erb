@@ -2,28 +2,20 @@
 <h2 class="tagline">Happy discoveries wherever you go...</h3>
 
   <img src="/logo2.png" alt="Logo"> -->
-<img src="/logo2.png" alt="Logo">
 
-<!-- <% @pictures.each do |picture| %>
-<%= image_tag picture.image.url(:medium)%>
-<% picture.caption %>
-<%end%> -->
-<!-- <% @pictures.each do |picture| %>
-  <div class="row">
-    <%= link_to (image_tag picture.image.url(:medium)), picture_path(picture) %> <!-- we should take out picture path and figure out how to expand -->
-    <!-- <p>
-      <%= picture.caption %>
-    </p>
-  </div>
+  <section class="index parallax parallax-1">
+    <div class="container">
+      <!-- <img src="/logo2.png" alt="Logo"> -->
+      <h1>Happenstance</h1>
+    </div>
+  </section>
+  <section class="index parallax parallax-1">
+    <div class="container">
+  <h2>Happy discoveries wherever you go....</h2>
+</div>
+</section>
 
 
-<% end %> -->
-
-<!--
-<li><a href="/neighborhood">Wynwood</a></li>
-<li><a href="/brickell">Brickell</a></li>
-<li><a href="/south_beach">SOBE</a></li>
-<li><a href="/little_havana">Little Havana</a></li> -->
 
 <head>
 <script type="text/javascript">
@@ -34,6 +26,9 @@ function countClicks() {
 }
 </script>
 
+
+<section class="index content">
+  <div class="content">
 <div id="bootstrap-overrides">
 <div class="picture-wrapper row">
   <% @pictures.each do |picture| %>
@@ -69,3 +64,5 @@ function countClicks() {
   <button type="button" class="btn btn-outline-info">
   <%= link_to 'Next Page', page: @page + 1 %></button>
 </div>
+</div>
+</section>
