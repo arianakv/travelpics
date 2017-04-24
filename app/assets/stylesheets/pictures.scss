@@ -95,7 +95,7 @@ button {
   background-color: white;
 }
 
-#bootstrap-overrides .row{
+#bootstrap-overrides .picture-wrapper{
   margin-left: 26em;
   padding-left: 1em;
   // width: 25%;
@@ -114,4 +114,8 @@ button {
 #caption {
   position: relative;
   padding-top: 1em;
+}
+
+#bootstrap-overrides img {
+  max-width: 600px;
 }
