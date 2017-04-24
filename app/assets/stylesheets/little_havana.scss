@@ -1,3 +1,36 @@
 // Place all the styles related to the LittleHavana controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+/* ============================================================
+  SECTIONS
+============================================================ */
+section.havana:last-child {
+  margin-bottom: 0;
+}
+section.havana.content {
+  padding: 30px 0;
+  display: inline-block;
+}
+section.havana.parallax {
+  height: 600px;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+section.havana.parallax h1 {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 53px;
+  line-height: 600px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+section.havana.parallax-1 {
+  background-image: url("/havana.jpg");
+}

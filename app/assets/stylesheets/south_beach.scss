@@ -4,58 +4,75 @@
 
 
 
-body {
-    font-family:'Lato', sans-serif;
-    font-size:1em;
-    color:#777;
-    font-weight:300;
-    line-height:1.7;
-    overflow-x:hidden;
-}
-
-h1 {
-    color:#333;
-    line-height:1.4;
-    font-weight:700;
-}
-
-.mx-width {
-    max-width:960px;
-    margin:0 auto;
-}
-
-a,a:hover {
-    color:#563d7c;
-    text-decoration:none;
-}
-
-
-
-.card-img-top{
-  width:100%;
-  height:auto;
-}
-
-header {
-    padding-bottom:50px;
-}
-.jumbotron-fluid {
-    padding:0;
-}
-
+// body {
+//     font-family:'Lato', sans-serif;
+//     font-size:1em;
+//     color:#777;
+//     font-weight:300;
+//     line-height:1.7;
+//     overflow-x:hidden;
+// }
 //
-// .display-2 {
-//     font-family:'Lato';
-//     font-size:60px;
-//     line-height:1;
-//     font-weight:300;
-//     color:#fff
+// h1 {
+//     color:#333;
+//     line-height:1.4;
+//     font-weight:700;
+// }
+//
+// .mx-width {
+//     max-width:960px;
+//     margin:0 auto;
+// }
+//
+// a,a:hover {
+//     color:#563d7c;
+//     text-decoration:none;
+// }
+//
+//
+//
+// .card-img-top{
+//   width:100%;
+//   height:auto;
+// }
+//
+// header {
+//     padding-bottom:50px;
+// }
+// .jumbotron-fluid {
+//     padding:0;
 // }
 
-// .learn {
-//     font-family:'Lato';
-//     font-size:27px;
-//     line-height:1.4;
-//     font-weight:300;
-//     color:#fff;
-// }
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+/* ============================================================
+  SECTIONS
+============================================================ */
+section.beach:last-child {
+  margin-bottom: 0;
+}
+section.beach.content {
+  padding: 30px 0;
+  display: inline-block;
+}
+section.beach.parallax {
+  height: 600px;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+section.beach.parallax h1 {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 53px;
+  line-height: 600px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+section.beach.parallax-1 {
+  background-image: url("/south-beach.jpeg");
+}

@@ -5,3 +5,36 @@
 // body {
 //     background: #aaa;
 // }
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+/* ============================================================
+  SECTIONS
+============================================================ */
+section.brickell:last-child {
+  margin-bottom: 0;
+}
+section.brickell.content {
+  padding: 30px 0;
+  display: inline-block;
+}
+section.brickell.parallax {
+  height: 600px;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+section.brickell.parallax h1 {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 53px;
+  line-height: 600px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+section.brickell.parallax-1 {
+  background-image: url("/brickell-city.jpg");
+}

@@ -9,6 +9,7 @@
 <!-- Bootstrap CSS -->
 <link rel="stylesheet" href="css/bootstrap.min.css">
 <link rel="stylesheet" href="css/custom.css">
+<!-- <link rel="stylesheet" href="/south_beach.scss"> -->
 <!-- Fonts -->
 <link href='https://fonts.googleapis.com/css?family=Lato:400,700,900,300' rel='stylesheet' type='text/css'>
 <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
@@ -17,7 +18,12 @@
 </head>
 
 <body>
-  <h1>Your Guide to South Beach</h1>
+  <section class="beach parallax parallax-1">
+      <div class="container">
+        <h1>Your Guide to South Beach</h1>
+      </div>
+    </section>
+
 
 
   <!-- <div id="myCarousel" class="carousel slide" data-ride="carousel">
@@ -27,7 +33,7 @@
             <li data-target="#myCarousel" data-slide-to="1"></li>
             <li data-target="#myCarousel" data-slide-to="2"></li>
         </ol>
-        <!- Wrapper for carousel items --> 
+        <!- Wrapper for carousel items -->
         <!-- <div class="carousel-inner">
             <div class="item active">
                 <img src="/shot.jpg" alt="First Slide">
@@ -48,48 +54,52 @@
         </a> -->
 
 <!-- Columns with info-->
-  <div class="row">
-  <div class="col-md-3">
-  <div class="card">
-  <img class="card-img-top" src="/beach_rs.jpg" alt="Beach">
-  <div class="card-block">
-  <h4 class="card-title">Beaches</h4>
-  South Beach is the Miami of postcards; the skyline of Ocean Drive has been featured on television what must be millions of times, and yes, the people are as beautiful and as they look on TV.
-  <a href="http://v4-alpha.getbootstrap.com/components/card/" class="btn btn-primary">Learn More</a>
+<section class="beach content">
+  <div class="content">
+    <div class="row">
+      <div class="col-md-3">
+        <div class="card">
+          <img class="card-img-top" src="/beach_rs.jpg" alt="Beach">
+          <div class="card-block">
+            <h4 class="card-title">Beaches</h4>
+            South Beach is the Miami of postcards; the skyline of Ocean Drive has been featured on television what must be millions of times, and yes, the people are as beautiful and as they look on TV.
+            <a href="http://v4-alpha.getbootstrap.com/components/card/" class="btn btn-primary">Learn More</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card card-inverse card-primary text-center">
+          <img class="card-img-top" src="/concert_rs.jpg" alt="nightlife">
+          <div class="card-block">
+            <h4 class="card-title">Nightlife</h4>
+            The South Beach neighborhood of Miami Beach fairly glitters with nightlife – all day long.
+            <a href="http://v4-alpha.getbootstrap.com/components/card/" class="btn btn-primary">Learn More</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card card-inverse card-success text-center">
+          <img class="card-img-top" src="/spa_rs.jpg" alt="Spa">
+          <div class="card-block">
+            <h4 class="card-title">Relaxation</h4>
+            If you know where to look, you can find an abundance of locales and activities that will add calm and relaxation to your life, even in South Beach.
+            <a href="http://v4-alpha.getbootstrap.com/components/card/" class="btn btn-primary">Learn More</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card card-inverse card-info text-center">
+          <img class="card-img-top" src="/drink_rs.jpg" alt="Foodie">
+          <div class="card-block">
+            <h4 class="card-title">Food & Drinks</h4>
+            Taste delicious and authentic cuisine around the one of the city's most historic neighborhoods.
+            <a href="http://v4-alpha.getbootstrap.com/components/card/" class="btn btn-primary">Learn More</a>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
-  </div>
-  </div>
-  <div class="col-md-3">
-  <div class="card card-inverse card-primary text-center">
-  <img class="card-img-top" src="/concert_rs.jpg" alt="nightlife">
-  <div class="card-block">
-  <h4 class="card-title">Nightlife</h4>
-The South Beach neighborhood of Miami Beach fairly glitters with nightlife – all day long.
-  <a href="http://v4-alpha.getbootstrap.com/components/card/" class="btn btn-primary">Learn More</a>
-  </div>
-  </div>
-  </div>
-  <div class="col-md-3">
-  <div class="card card-inverse card-success text-center">
-  <img class="card-img-top" src="/spa_rs.jpg" alt="Spa">
-  <div class="card-block">
-  <h4 class="card-title">Relaxation</h4>
-If you know where to look, you can find an abundance of locales and activities that will add calm and relaxation to your life, even in South Beach.
-  <a href="http://v4-alpha.getbootstrap.com/components/card/" class="btn btn-primary">Learn More</a>
-  </div>
-  </div>
-  </div>
-  <div class="col-md-3">
-  <div class="card card-inverse card-info text-center">
-  <img class="card-img-top" src="/drink_rs.jpg" alt="Foodie">
-  <div class="card-block">
-  <h4 class="card-title">Food & Drinks</h4>
-   Taste delicious and authentic cuisine around the one of the city's most historic neighborhoods.
-  <a href="http://v4-alpha.getbootstrap.com/components/card/" class="btn btn-primary">Learn More</a>
-  </div>
-  </div>
-  </div>
-  </div>
+</section>
 
 
   <!-- JavaScripts -->
