@@ -2,7 +2,9 @@ class PicturesController < ApplicationController
   before_action :set_picture, only: [:show, :edit, :update, :destroy]
 
   def index
-    @pictures = Picture.all
+    @page = (params[:page]|| 1).to_i
+    skip = (@page - 1) * 2
+    @pictures = Picture.all.order(created_at: :desc).limit(2).offset(skip)
   end
 
   def show

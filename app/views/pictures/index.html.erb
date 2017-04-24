@@ -1,4 +1,9 @@
-<h1>Welcome to TravelPics!</h1>
+<!-- <h1 class="display-1">Happenstance</h1>
+<h2 class="tagline">Happy discoveries wherever you go...</h3>
+
+  <img src="/logo2.png" alt="Logo"> -->
+<img src="/logo2.png" alt="Logo">
+
 <!-- <% @pictures.each do |picture| %>
 <%= image_tag picture.image.url(:medium)%>
 <% picture.caption %>
@@ -36,4 +41,12 @@
       </p>
     </div>
   <% end %>
+</div>
+
+<!-- Prev/Next Pages -->
+<div id="link">
+  <button type="button" class="btn btn-outline-info">
+  <%= link_to 'Previous Page', page: @page - 1 %></button>
+  <button type="button" class="btn btn-outline-info">
+  <%= link_to 'Next Page', page: @page + 1 %></button>
 </div>
