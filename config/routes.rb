@@ -6,6 +6,7 @@ Rails.application.routes.draw do
   # get 'gallery' => 'gallery#gallery'
   get 'pictures', to: 'pictures#index', page: 1
   get 'pictures/page/:page', to: 'pictures#index'
+  get 'pictures/:id/liked' => 'pictures#liked'
 
   resources :brickell
   resources :south_beach

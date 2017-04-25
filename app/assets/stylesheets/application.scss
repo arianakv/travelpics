@@ -14,23 +14,51 @@
  *= require_self
 
  */
+
  @import "bootstrap-sprockets";
- .row{margin-left: 10em;}
- @import "bootstrap";
+  .row{margin-left: 10em;}
+  @import "bootstrap";
 
  .picture-wrapper{
-   text-align: center;
-   color: darkgray;
- }
- // #bootstrap-overrides .row{
- //   margin-left: 25em;
- //   padding-left: 1em;
- // }
+    text-align: center;
+    color: #465d69 ;
+  }
+  // #bootstrap-overrides .row{
+  //   margin-left: 25em;
+  //   padding-left: 1em;
+  // }
 
-#bootstrap-overrides .navbar-nav > .active > a:hover {
-     background-color: lightblue;
+ #bootstrap-overrides .navbar-nav > .active > a:hover {
+      background-color: lightblue;
+  }
+
+ #bootstrap-overrides .dropdown-menu > li > a:hover {
+   background-color: lightblue;
  }
 
-#bootstrap-overrides .dropdown-menu > li > a:hover {
-  background-color: lightblue;
-}
+ #bootstrap-overrides .navbar {
+   margin-bottom: 0px;
+ }
+
+ #bootstrap-overrides .picture {
+   border-color: #3fb5b5 ;
+   margin-left: -5em;
+ }
+
+ #bootstrap-new-overrides .form-wrapper {
+   border-color: rgba(255, 255, 255, 0.82);
+   border-radius: 24px;
+   width: 50%;
+   background-color: rgba(255, 255, 255, 0.82);
+ }
+
+ #bootstrap-new-overrides {
+   background-image: url("/polaroid.jpeg");
+   padding-top: 13em;
+   padding-bottom: 13em;
+ }
+
+ #bootstrap-new-overrides input.btn.btn-default.btn-success {
+   background-color: rgb(92, 159, 184);
+   border-color: rgba(76, 174, 76, 0);
+ }

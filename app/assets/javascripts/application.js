@@ -15,3 +15,23 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
+
+
+  // document.getElementById("p2").innerHTML = count;
+$(document).on('turbolinks:load', function() {
+  $('.heart').click(function(e) {
+    e.preventDefault();
+    var id = $(this).data('id');
+    var counter = $(this).next('#p2')[0];
+    // $.get('/pictures/' + id + '/liked')
+    $.ajax({
+      url: '/pictures/' + id + '/liked',
+      success: function(e) {
+        $(counter).text(function() {
+          // alert('stuff')
+          return parseInt($(counter).text()) + 1;
+        });
+      }
+    });
+  });
+});

@@ -105,7 +105,15 @@ button {
   max-width: 600px;
 }
 
-#heart img {
+.heart {
+  display: inline-block;
+}
+
+#p2 {
+  display: inline-block;
+}
+
+.heart img {
   width: 30px;
   height: 30px;
 }
@@ -138,7 +146,7 @@ section.index.content {
   display: inline-block;
 }
 section.index.parallax {
-  height: 340px;
+  height: 329px;
   background-position: 50% 50%;
   background-repeat: no-repeat;
   background-attachment: fixed;

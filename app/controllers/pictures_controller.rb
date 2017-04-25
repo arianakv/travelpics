@@ -1,8 +1,9 @@
 class PicturesController < ApplicationController
   before_action :set_picture, only: [:show, :edit, :update, :destroy]
 
+
   def index
-    @page = (params[:page]|| 1).to_i
+    @page = params[:page].to_i || 1
     skip = (@page - 1) * 2
     @pictures = Picture.all.order(created_at: :desc).limit(2).offset(skip)
   end
@@ -34,6 +35,16 @@ class PicturesController < ApplicationController
 
   def new
     @picture = Picture.new
+  end
+
+  def liked
+    @picture = Picture.find(params[:id])
+    @picture.likes += 1
+    if @picture.save
+      render :nothing => true, :status => 200
+    else
+      render :nothing => true, :status => 500
+    end
   end
 
   private

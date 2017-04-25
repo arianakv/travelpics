@@ -16,17 +16,6 @@
 </section>
 
 
-
-<head>
-<script type="text/javascript">
-var count = 0;
-function countClicks() {
- count = count + 1;
-    document.getElementById("p2").innerHTML = count;
-}
-</script>
-
-
 <section class="index content">
   <div class="content">
 <div id="bootstrap-overrides">
@@ -46,10 +35,12 @@ function countClicks() {
       </p>
 
       <section id="like-button">
-        <p>
-          <a id="heart" href="javascript:countClicks();"><img src="http://i1174.photobucket.com/albums/r615/arianakv/409001-200_zpsl4iralyh.png" alt="heart"></a>
-
-          <div id="p2">0<div></p>
+        <!-- <p> -->
+            <a class="heart" href="#" data-id="<%= picture.id %>">
+              <img src="http://i1174.photobucket.com/albums/r615/arianakv/409001-200_zpsl4iralyh.png" alt="heart">
+            </a>
+            <div id="p2"><%= picture.likes%><div>
+        <!-- </p> -->
       </section>
 
     </div>

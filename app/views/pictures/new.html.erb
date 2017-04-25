@@ -3,6 +3,7 @@
   <%= f.input :caption %>
   <%= f.button :submit %>
 <% end %> -->
+<div id="bootstrap-new-overrides">
 
 <div class="form-wrapper">
   <%= simple_form_for @picture, html: { class: 'form-horizontal', multipart: true } do |f| %>
@@ -16,4 +17,5 @@
       <%= f.button :submit, class: 'btn-success' %>
     </div>
   <% end %>
+</div>
 </div>
