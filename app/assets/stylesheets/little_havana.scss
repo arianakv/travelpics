@@ -1,6 +1,16 @@
 // Place all the styles related to the LittleHavana controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+li {
+  list-style-type: none;
+}
+// #added
+#boostrap-havana-overrides ul {
+  padding-left: 0em;
+}
+
+
 .container {
   max-width: 960px;
   margin: 0 auto;
