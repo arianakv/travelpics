@@ -5,6 +5,18 @@
 // body {
 //     background: #aaa;
 // }
+li {
+ list-style-type: none;
+}
+
+.card-block{
+ display: center;
+}
+
+#bootstrap-brickell-overrides ul {
+ padding-left: 0em;
+}
+
 .container {
   max-width: 960px;
   margin: 0 auto;

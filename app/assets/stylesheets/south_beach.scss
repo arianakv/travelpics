@@ -42,6 +42,17 @@
 // .jumbotron-fluid {
 //     padding:0;
 // }
+li {
+ list-style-type: none;
+}
+
+.card-block{
+ display: center;
+}
+
+#bootstrap-beach-overrides ul {
+ padding-left: 0em;
+}
 
 .container {
   max-width: 960px;
