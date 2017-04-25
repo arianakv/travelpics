@@ -4,8 +4,8 @@ class PicturesController < ApplicationController
 
   def index
     @page = params[:page].to_i || 1
-    skip = (@page - 1) * 2
-    @pictures = Picture.all.order(created_at: :desc).limit(2).offset(skip)
+    skip = (@page - 1) * 6
+    @pictures = Picture.all.order(created_at: :desc).limit(6).offset(skip)
   end
 
   def show

@@ -23,6 +23,10 @@ body {
   }
 }
 
+#bootstrap-overrides .navbar-nav li a:hover{
+  color: rgb(92, 159, 184);
+}
+
 .navbar-container {
   width: 640px;
   margin: 0 auto;
@@ -127,6 +131,15 @@ button {
   max-width: 600px;
 }
 
+#bootstrap-overrides .navbar-default .navbar-brand {
+  // font-family: 'Raleway', sans-serif;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 21px;
+}
+
+#bootstrap-overrides .navbar-default .navbar-brand:hover {
+  color: rgb(92, 159, 184);
+}
 /*====================================================
  PARALLAX
  ========================================*/
