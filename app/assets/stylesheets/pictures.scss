@@ -61,8 +61,8 @@ body {
 }
 
 .image {
-  border-bottom: 1px solid #eeefef;
-  border-top: 1px solid #eeefef;
+  // border-bottom: 1px solid #eeefef;
+  // border-top: 1px solid #eeefef;
   margin: 0 auto;
 }
 
@@ -140,6 +140,16 @@ button {
 #bootstrap-overrides .navbar-default .navbar-brand:hover {
   color: rgb(92, 159, 184);
 }
+
+.heading-title {
+  position: relative;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 40.4px;
+  display: inline-flex;
+  margin-bottom: 0em;
+  margin-top: 2em;
+  color: #777;
+}
 /*====================================================
  PARALLAX
  ========================================*/
@@ -166,7 +176,7 @@ section.index.parallax {
   background-size: cover;
 }
 section.index.parallax h1 {
-  color: rgba(255, 255, 255, 0.8);
+  color: rgba(255, 255, 255, 0.82);
   font-size: 80px;
   line-height:600px;
   font-weight: 250;
